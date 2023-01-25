@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
   res.send("Ad-Lib.io QA Tool");
 });
 
+app.use("/users", require("./routes/user"));
 app.use("/users/signup", require("./routes/user"));
 app.use("/users/signin", require("./routes/user"));
 
